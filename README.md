@@ -1,4 +1,4 @@
-# This html file was developed with assistance from Claude Code 
+
 
 # Engagement Invite
 
@@ -62,6 +62,7 @@ Works in current versions of Chrome, Edge, Firefox, and Safari, on desktop and m
 
 - Dino sprite adapted from the open-source [Chromium T-Rex Runner](https://github.com/wayou/t-rex-runner) assets.
 - Fonts by Google Fonts.
+- This html file was developed with assistance from Claude Code 
 
 ---
 
