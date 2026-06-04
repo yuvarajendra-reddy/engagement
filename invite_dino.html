@@ -676,6 +676,12 @@ body{font-family:'DM Sans',sans-serif;background:#000;color:var(--cream);}
       var NEON = '#00ff88';
       var GOLD = '#b8936a';
       var flapUp = bird.frame % 2 === 0;
+      // The bird sprite is drawn beak-right; it travels left, so flip it
+      // horizontally about its own center so it faces its direction of travel.
+      ctx.save();
+      ctx.translate(x + bird.w / 2, 0);
+      ctx.scale(-1, 1);
+      ctx.translate(-(x + bird.w / 2), 0);
       ctx.fillStyle = GOLD;
       ctx.fillRect(x + 14, y + 6, 22, 10);
       ctx.fillRect(x + 32, y + 3, 10, 8);
@@ -694,6 +700,7 @@ body{font-family:'DM Sans',sans-serif;background:#000;color:var(--cream);}
         ctx.fillRect(x + 14, y + 14, 16, 6);
         ctx.fillRect(x + 10, y + 18, 12, 4);
       }
+      ctx.restore();
       var labelW = Math.max(76, bird.label.length * 9 + 16);
       // bird flies left, so the banner trails BEHIND it (to the right)
       var bx = x + bird.w + 10, by = y - 2;
