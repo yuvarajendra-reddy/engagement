@@ -1,3 +1,5 @@
+# This html file was developed with assistance from Claude Code 
+
 # Engagement Invite
 
 An interactive, single-page engagement invitation built as a playful homage to the Google Chrome offline dinosaur game. Guests "boot up" a mock collaboration engine, play a short dino mini-game to reveal the event details, and land on the full invitation.
